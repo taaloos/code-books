@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+<title>Layout CSS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- Omitidas outras meta tags --> 
+<style type="text/css" media="all">
+body {
+	text-align: center; /* Centraliza no IE */
+	margin: 0;
+	padding: 0;
+	}
+#tudo {
+	width: 100%;
+	margin: 0 auto; /* Centraliza em navegadores standards */
+	text-align: left; /* Retorna o alinhamento de textos para a esquerda */
+	min-width: 760px;
+	max-width: 950px;
+	}
+#topo {
+	height: 90px;
+	background: #ffd18b;
+	}
+h1 {
+	margin-top: 0; /* Retira margem superior em navegadores standards */
+	}
+h2, h3, h4, p, ul {
+	padding:0 15px;
+	}
+#principal {
+	width: 75%;
+	float: right;
+	background: #d1ecf6;
+	}
+#navegacao {
+	width: 23%;
+	float: left;
+	background: #a2daec;
+	}
+#rodape {
+	clear: both;
+	height: 25px;
+	background: #ffecd1;
+	}  
+</style>
+</head>
+<body>
+<div id="tudo">
+		<div id="topo">
+			<h1>Este é o topo</h1>
+		</div>
+		<div id="principal">
+			<h2>Cabeçalho nível 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi eleifend, purus quis laoreet faucibus, ante augue malesuada mi, id rhoncus augue lorem eget elit. Ut sollicitudin sodales purus.</p>
+		<p>Phasellus libero felis, blandit nec, commodo ut, imperdiet ut, nibh.</p>
+		<p>Suspendisse potenti. Donec ullamcorper cursus dolor. Duis vitae ipsum. Maecenas dapibus hendrerit diam. Morbi varius, massa id pretium accumsan, nunc lorem congue libero, ut euismod metus libero id nulla.</p>
+			
+			<h2>Cabeçalho nível 2</h2>
+		<p>Duis posuere odio sed velit vulputate venenatis. Suspendisse et dui ac metus auctor fringilla. Curabitur interdum augue a pede.</p>
+<p>Curabitur hendrerit erat ut augue. Cras gravida. Mauris consequat aliquam leo. Aenean non tortor id metus aliquet consectetuer.</p>
+<p>Quisque sodales lectus ac orci. Donec eleifend fringilla mi. Vivamus vel massa. Aenean interdum pellentesque sem. Nulla pellentesque felis et tortor.</p>
+
+			<h3>Cabeçalho nível 3</h3>
+		<p>Duis cursus, dui non dictum tincidunt, wisi ipsum mollis wisi, nec ornare velit ipsum eget enim. In sed felis. Phasellus condimentum sodales nulla.</p>
+		<p>Etiam orci leo, rutrum malesuada, congue vel, fringilla vitae, lorem. Pellentesque ligula.</p>
+		</div>
+		<div id="navegacao">
+			<h4>Menu de navegação</h4>
+				<ul>
+					<li>home</li>
+					<li>quem somos</li>
+					<li>portfólio</li>
+					<li>contato</li>
+			    </ul>
+		</div>
+		<div id="rodape">
+			<address>Rua Barão de Ipanema 23.789 salas 130/135 - Rio, RJ </address>
+		</div>
+</div>
+</body>
+</html>

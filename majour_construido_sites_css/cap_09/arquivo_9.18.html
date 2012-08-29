@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+<title>Navegação</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- Omitidas outras meta tags --> 
+<style type="text/css" media="all">
+#nav, #nav * {
+	margin: 0;
+	padding: 0;
+	}
+#nav {
+	font: bold 0.8em Verdana, Arial, Helvetica, sans-serif;
+	width: 10em;
+	background: #000;
+	list-style: none;
+	padding: 0 1px 1px;
+	}
+#nav li {
+	border-top: 1px solid #000;
+	}
+#nav li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.25em 0.5em 0.25em 0.75em;
+	border-left: 1em solid #069;
+	background: #09c;	
+	}
+#nav li a:visited {
+	color: #ccc;
+	}
+#nav li a:hover {
+	color: #2eacd5;
+	background: #fff;	
+	border-left: 1em solid #a2c7da;
+	}
+/* Holly hack - Comente esta regra CSS para torná-la sem efeito e visualize o menu no Internet Explorer 6 para ver o bug em ação */
+/*\*/
+* html ul li { float: left; }
+* html #nav li a {height: 1%;} 
+/* */
+</style>
+</head>
+<body>
+<ul id="nav">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="portfolio.html">Portfólio</a></li>
+	<li><a href="quemsomos.html">Quem Somos</a></li>
+	<li><a href="contato.html">Contato</a></li>
+</ul>
+</body>
+</html>

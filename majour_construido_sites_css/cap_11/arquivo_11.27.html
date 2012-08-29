@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+<title>Tabelas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- Omitidas outras meta tags --> 
+<style type="text/css" media="all">
+body {
+	font: 62.5% Georgia, "Times New Roman", Times, serif;
+	color:#036;
+	}
+table {
+	border-collapse: collapse;
+	border-top:2px solid #069;
+	border-bottom:10px solid #4690b5;
+	}
+caption {
+	text-align: left;
+	font: bold 1.6em Arial, Helvetica, sans-serif;	
+	color: #069;
+	padding-left: 100px;
+	line-height: 1.8em;
+	height: 1.8em;
+	background: #fff6e3 url(icon-2.png) no-repeat 15px;
+	}
+tr td, tr th {
+	font-size: 1.1em; /* ajusta o tamanho de fonte nas células da tabela */
+	padding: 5px 10px;
+	border-bottom:1px solid #ffdf9e;
+	}
+tbody tr td {
+	padding-left: 26px;
+	background: url(bullet.png) no-repeat 5px;
+	}
+thead tr th {
+	padding-left: 26px;
+	background-repeat: no-repeat;
+	background-position: 6px;
+	}
+th.hora {
+	background-image: url(icon-hora.gif);
+	}
+th.classe {
+	background-image: url(icon-classe.gif);
+	}
+th.tarifa {
+	background-image: url(icon-tarifa.gif);
+	}
+th.frequencia {
+	background-image: url(icon-frequencia.gif);
+	}
+tr th {
+	font: small-caps bold 1.4em Arial, Helvetica, sans-serif;
+	color: #069;
+	}
+tfoot tr td {
+	text-align: center;
+	}
+th[scope=row] {
+	background: url(bullet-row.gif) no-repeat 0 1px;
+	}
+</style>
+</head>
+<body>
+<table summary="Tabela com os horários de saída e chegada, classe do ônibus,
+preço da passagem e frequência dos ônibus da Viação Alfa com um nível
+de cabeçalho para linhas e colunas.">
+	<caption>
+	Viação Alfa
+	</caption>
+	<thead>
+		<tr>
+			<td></td>
+			<th scope="col" class="hora">Hora da saída</th>
+			<th scope="col" class="hora">Hora de chegada</th>
+			<th scope="col" class="classe">Classe do ônibus</th>
+			<th scope="col" class="tarifa">Tarifa normal</th>
+			<th scope="col" class="frequencia">Frequência</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="6">Válida para o período de 02 de abril de 2007 até 15 de junho de 2007.</td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<th scope="row">Cidade A</th>
+			<td>06:45</td>
+			<td>14:30</td>
+			<td>Convencional</td>
+			<td>80,00</td>
+			<td>Diária</td>
+		</tr>
+<tr>
+			<th scope="row">Cidade B</th>
+			<td>12:30</td>
+			<td>21:00</td>
+			<td>Convencional</td>
+			<td>100,00</td>
+			<td>Diária</td>
+		</tr>
+		<tr>
+			<th scope="row">Cidade C</th>
+			<td>19:00</td>
+			<td>06:00</td>
+			<td>Leito</td>
+			<td>150,00</td>
+			<td>Diária</td>
+		</tr>
+		<tr>
+			<th scope="row">Cidade D</th>
+			<td>13:00</td>
+			<td>18:00</td>
+			<td>Convencional</td>
+			<td>60,00</td>
+			<td>Diária</td>
+		</tr>
+		<tr>
+			<th scope="row">Cidade E</th>
+			<td>00:30</td>
+			<td>23:00</td>
+			<td>Executivo</td>
+			<td>210,00</td>
+			<td>Seg. e Dom. </td>
+		</tr>
+		<tr>
+			<th scope="row">Cidade F</th>
+			<td>21:15</td>
+			<td>23:45</td>
+			<td>Leito</td>
+			<td>280,00</td>
+			<td>Sábado</td>
+		</tr>
+		<tr>
+			<th scope="row">Cidade G</th>
+			<td>08:00</td>
+			<td>16:00</td>
+			<td>Convencional</td>
+			<td>85,00</td>
+			<td>Diária.</td>
+		</tr>
+		<tr>
+			<th scope="row">Cidade H</th>
+			<td>23:00</td>
+			<td>06:00</td>
+			<td>Executivo</td>
+			<td>165,00</td>
+			<td>Qua. e Sáb.</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+<title>Forms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- Omitidas outras meta tags --> 
+<style type="text/css" media="all">
+form { 
+	font: 11px Verdana, Arial, sans-serif;
+	width: 50em; 
+	background: #f1faf1 url(form.jpg) no-repeat;
+	border: 1px solid #090; 
+	padding: 2em 1.5em 2em 75px;
+	color: #090;
+	}
+fieldset {
+	border:1px solid #9e9;
+	padding: 1em;
+	}
+fieldset {
+	margin: 1em 0;
+	}
+fieldset#es {
+	background: url(esporte.jpg) no-repeat right bottom;
+	}
+fieldset#dp1 {
+	background: url(profissao.jpg) no-repeat right bottom;
+	}
+fieldset#dp2 {
+	background: url(localizacao.jpg) no-repeat right bottom;
+	}
+fieldset#com {
+	background: url(comentario.jpg) no-repeat 95% 100%;
+	}
+fieldset#fe {
+	background: url(etaria.jpg) no-repeat right bottom;
+	}
+legend {
+	border: 1px solid #9c9;
+	padding: 2px 5px;
+	font-weight:bold;
+	background: #fff;
+	}
+input, select{
+	border: 1px solid #090;
+	background: #fff;
+	}
+input#enviar, input#limpar {
+	background: #fff;
+	} 
+li input, div p input {
+	border: none;
+	}
+label {
+	display: block;
+	margin: 0.8em 0 0.2em 0;
+	}
+p label, li label {
+	display: inline;
+	}
+fieldset#dp1 input, fieldset#dp2 input,
+select {
+	width: 90%;
+	}
+textarea {
+	width: 60%;
+	background: #fff;
+	border: 1px solid #090;
+	}
+legend {
+	font-weight:bold;
+	}
+fieldset#dp1, fieldset#dp2 {
+	width: 44%;
+	float: left;
+	}
+fieldset#dp2 {
+	float: right;
+	}
+fieldset#fe {
+	clear:both;
+	}
+div {
+	float: left;
+	width: 49.9%;
+	}
+div p {
+	margin: 0 0.5em;
+	}
+ul {
+	list-style: none;
+	margin: 0 ;
+	padding: 0;
+	}
+</style>
+</head>
+<body>
+<form action=""> 
+<fieldset>
+<legend>Cadastro Geral</legend>
+<fieldset id="dp1">
+<legend>Dados pessoais</legend>
+	<label for="nome">Nome completo:</label>
+	<input name="text" type="text" id="nome" />
+	<label for="prof">Profissão:</label>
+<select id="prof">
+		<option selected="selected">Sua profissão</option>
+	<optgroup label="Engenharia">
+		<option>Civil</option>
+		<option>Elétrica</option>
+		<option>Eletrônica</option>
+	</optgroup>
+<optgroup label="Médicas">
+		<option>Clínico geral</option>
+		<option>Ortopedista</option>
+		<option>Cardiologista</option>
+	</optgroup>
+</select>	
+</fieldset>
+<fieldset id="dp2">
+<legend>Localização</legend>
+	<label for="email">E-mail:</label>
+	<input type="text" id="email" />	
+	<label for="rua">Rua:</label>
+	<input type="text" id="rua" />
+</fieldset>
+<fieldset id="fe"> 
+<legend>Faixa etária</legend>
+<div>
+<p><input type="radio" name="idade" id="vinte" /><label for="vinte">até 20 anos</label></p>
+<p><input type="radio" name="idade" id="trinta" /><label for="trinta">mais de 20 até 30 anos</label></p>
+<p><input type="radio" name="idade" id="quarenta" /><label for="quarenta">mais de 30 até 40 anos</label></p>
+</div>
+<div>
+<p><input type="radio" name="idade" id="cinquenta" /><label for="cinquenta">mais de 40 até 50 anos</label></p>
+<p><input type="radio" name="idade" id="sessenta" /><label for="sessenta">mais de 50 até 60 anos</label></p>
+<p><input type="radio" name="idade" id="mais_sessenta" /><label for="mais_sessenta">mais de 60</label></p>
+</div>
+</fieldset>
+<fieldset id="es">
+<legend>Esportes que pratica</legend>
+<ul>
+<li><input type="checkbox" id="fca" /><label for="fca">Futebol de campo</label></li>
+<li><input type="checkbox" id="fsa" /><label for="fsa">Futebol de salão</label></li>
+<li><input type="checkbox" id="fso" /><label for="fso">Futebol society</label></li>
+<li><input type="checkbox" id="vqu" /><label for="vqu">Volley de quadra</label></li>
+<li><input type="checkbox" id="vpr" /><label for="vpr">Volley de praia</label></li>
+<li><input type="checkbox" id="npi" /><label for="npi">Natação em piscina</label></li>
+<li><input type="checkbox" id="nma" /><label for="nma">Natação em mar aberto</label></li>
+</ul>
+</fieldset>
+</fieldset>
+<fieldset id="com">
+<legend>Comentário</legend>
+	<label for="mensagem">Mensagem:</label>
+	<textarea id="mensagem" rows="6" cols="28"></textarea>
+</fieldset>
+<p><input type="submit" value="Enviar" id="enviar" />
+<input type="reset" value="Limpar" id="limpar" /></p>
+</form>
+</body>
+</html>

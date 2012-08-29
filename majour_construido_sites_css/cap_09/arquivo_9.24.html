@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+<title>Navegação</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- Omitidas outras meta tags --> 
+<style type="text/css" media="all">
+ul#nav, ul#nav li ul {
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 10em; 
+	border: solid #ccc; 
+	border-width: 0 1px 1px;
+	}
+ul#nav li {
+	position: relative;
+	}
+ul#nav li ul {
+	position: absolute;
+	left: 10em; 
+	top: 0;
+	display: none;
+	}
+ul#nav li a, ul#nav ul li a {
+	display: block;
+	text-decoration: none;
+	color: #666;
+	padding: 0.25em 0.5em 0.25em 0.75em;
+	border-top: 1px solid #ccc; 
+	}
+	
+/*\*/
+* html ul li {float: left; height: 1%;}
+* html ul li a {height: 1%;}
+/* */
+ul#nav li:hover ul, 
+ul#nav li.over ul {display: block;} 
+ul#nav li.submenu {
+	background: url(seta.gif) no-repeat right; 
+	}
+
+ul#nav li.over ul li ul, 
+ul#nav li:hover ul li ul {
+	display: none;
+	}
+ul#nav li.over ul li.over ul, 
+ul#nav li:hover ul li:hover ul {
+	display: block;
+	}
+</style>
+<!--[if lt IE 7]>
+<script type="text/javascript">
+// Código publicado por Nick Rigby baseado no original de Patrick Griffiths
+function IEHoverPseudo() {
+	var navItems = document.getElementById("nav").getElementsByTagName("li");
+		for (var i=0; i<navItems.length; i++) {
+		if(navItems[i].className == "submenu") {
+			navItems[i].onmouseover=function() { this.className += " over"; }
+			navItems[i].onmouseout=function() { this.className = " submenu"; }
+		}
+	}
+}
+window.onload = IEHoverPseudo;
+</script>
+<![endif]-->
+</head>
+<body>
+<ul id="nav">
+	<li><a href="index.html">Home</a></li>
+	<li class="submenu"><a href="#">Portfólio</a> 
+		<ul>
+			<li><a href="sites.html">Sites</a></li>
+			<li class="submenu"><a href="#">Interfaces</a>
+				<ul>
+					<li><a href="graficas.html">Gráficas</a></li>
+					<li><a href="digitais.html">Digitais</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href="quemsomos.html">Quem Somos</a></li>
+	<li><a href="contato.html">Contato</a></li>
+</ul>
+</body>
+</html>

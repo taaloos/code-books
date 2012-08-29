@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+<title>Forms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- Omitidas outras meta tags --> 
+<style type="text/css" media="all">
+body {font-size: 62.5%}
+form {
+	width: 20em; 
+	font-size: 1.6em;
+	}
+form fieldset {
+	border: 1px solid #666;
+	padding: 0 0.5em;
+	}
+form legend {
+	padding: 0 0.5em; 
+	border: 1px solid #333;
+	}
+form fieldset ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+form label {
+	display: block;
+	}
+form ol li {
+	margin: 0.8em 0;
+	}
+form input {
+	width: 15em;
+	}
+form input#enviar {
+	margin-bottom: 1em;
+	width: auto;
+	}
+form textarea {
+	width: 20em;
+	}
+</style>
+</head>
+<body>
+<form action="">
+<fieldset>
+<legend>Fale conosco</legend>
+<ol>		
+	<li>	
+		<label for="nome">Nome: </label>
+		<input type="text" id="nome" />
+	</li>
+	
+	<li>
+		<label for="email">E-mail: </label>
+		<input type="text" id="email" />
+	</li>
+
+	<li>
+		<label for="email">Mensagem: </label>
+		<textarea id="mensagem" rows="6" cols="28"></textarea>
+	</li>
+</ol>
+<input type="submit" value="Enviar" id="enviar" />
+</fieldset>
+</form>
+</body>
+</html>

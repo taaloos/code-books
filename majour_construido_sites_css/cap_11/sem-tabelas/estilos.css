@@ -1,0 +1,101 @@
+*, html, body {
+	margin:0;
+	padding:0;
+	}
+body {
+	color:#333; 
+	font:  62.5% Arial, sans-serif;                                     
+	width:765px;  
+	}
+/* =ESTRUTURA */
+#header {
+	color: #333;
+	background:#2d5d9d url('topo.jpg') no-repeat left top;
+	height:173px;	
+	}
+#pagebody {width:570px; float:right;}
+#content {margin:2.0em 1.0em;}
+#lateral {
+	width:190px; 
+	float:left; 
+	font-size:1.1em;
+	background:#eef2f5;
+	border-right:1px dotted #333;
+	}
+/* =LINKS */
+a:link {
+	color: #333; 
+	font-size: 1.3em;
+	}
+a:visited {color: #999; text-decoration:none;}
+a:hover {
+	text-decoration:none;
+	}
+a:focus, a:active {
+	outline:2px solid #c30;
+	color:#00f !important; 
+	background:#fff !important;
+	text-decoration:underline;
+	}
+* a.img:hover {background:transparent;}
+/* =CABECALHOS */
+#header h1, #header h2 {
+	text-indent:-10000px;
+}
+#content h1 {
+	background-color:#d4dde4;
+	color:#000;
+	font: bold 1.8em/1.8 Arial, Helvetica, sans-serif;
+	text-align:center;
+	margin-bottom:1.5em;
+	}
+#content h2 {
+	background:#bac7d3 url('bg-h2.jpg') no-repeat left top;
+	height:2.4em;
+	border:1px solid #ccc;
+	color:#333;
+	font-size:1.4em;
+	line-height:2.4;
+	margin:1.0em 0;
+	padding-left:15px;
+	}
+#content h3 {
+	background:#d4dde4;
+	height:20px;
+	color:#333;
+	font-size:1.3em;
+	line-height:1.5;
+	margin:1.0em 0 8px;
+	padding-left:5px;
+	}
+#lateral h3 {
+	height:2.5em;
+	line-height:2.5em;
+	text-align:left;
+	border-bottom:1px solid #becbd6;
+	font-size:1.0em;
+	color:#333;
+	padding:0 0 0 35px;
+	background:#becbd6;
+	margin:0.8em 0 0.8em -1.0em;
+	}
+#nav h3#tit-busca {
+	background:#d4dde4 url('bg-busca.jpg') left center no-repeat;
+	}
+body #wrapper a.hidden {display:block;color:#333;text-align:center;}
+#nav {margin:2.0em 0 2.0em 1.0em;}
+fieldset {width:95%;}
+form#busca p {text-align:center; width:95%; margin:0.4em auto;}
+form#busca #sbi:focus {background:#eee;}
+input#sbi {width:160px;}
+form#busca .esconde {display:none;}
+form#busca a:hover { background:none;}
+.center {text-align:center;}
+.img-left {float:left; margin-right:5px;}
+img {border:none;}
+#pagebody #ultimas { background:#eff2f5;}
+#ultimas p{line-height:1.4;margin-top: 1.2em;} 
+#ultimas a.img-left{float:left; margin-right:10px;} 
+#ultimas h3 {margin:0; font-size:1.3em; } 
+p.data {font-size:1.2em; border-bottom:none;font-weight:bold;}
+p {border-bottom:1px solid #ccc; padding-bottom:10px; font-size:1.3em;}

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+<title>Navegação</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<style type="text/css" media="all">
+
+ul#nav {
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+ul#nav, ul#nav li ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 10em; 
+}
+	
+ul#nav li {
+	width: 10em;
+	margin: 0 0 -1px -1px;
+	position: relative;
+}
+	
+ul#nav li ul {
+	position: absolute;
+	left: 10em; 
+	top: 0;
+	display: none;
+}
+
+ul#nav li a {
+	display: block;
+	text-decoration: none;
+	color: #666;
+	padding: 0.25em 0.5em 0.25em 0.75em;
+	border: 1px solid #ccc;
+}
+
+ul#nav li.submenu { background: url(seta.gif) no-repeat right; }
+
+
+/* comportamento */
+
+ul#nav li:hover ul { display: block; } 
+ul#nav li.submenu { background: url(seta.gif) no-repeat right; }
+ul#nav li:hover ul li ul { display: none; }
+ul#nav li:hover ul li:hover ul { display: block; }
+
+</style>
+
+<!--[if lt IE 8]> <style type="text/css"> ul#nav li { margin-bottom: -3px;  } </style> <![endif]-->
+
+<script type="text/javascript"> 
+
+// Menu Drop Down Acessível
+// Alexandre Junqueira
+// contato@alexandrejunqueira.com
+// http://www.alexandrejunqueira.com/projetos/menu-drop-down-acessivel/ 
+
+var dropdown_intervalId;
+var dropdown_ulId = (!dropdown_ulId) ? 'nav' : dropdown_ulId;
+var dropdown_delay = (!dropdown_delay) ? 1000 : dropdown_delay;
+
+function dropdown_init()
+{
+	try
+	{
+		var as = document.getElementById(dropdown_ulId).getElementsByTagName('a');
+		
+		for (var a = 0; a < as.length; a++)
+		{
+			as[a].onfocus = function() { dropdown_expand(this) }
+			as[a].onmouseover = function() { dropdown_expand(this) }
+			as[a].onblur = function() { dropdown_colapse(dropdown_delay) } 
+			as[a].onmouseout = function() { dropdown_colapse(dropdown_delay) }
+		}
+		
+		dropdown_colapse(0);
+	
+	} catch(e){}
+}
+
+function dropdown_expand(caller)
+{	
+	try
+	{	
+		clearInterval(dropdown_intervalId);
+		
+		var uls = caller.parentNode.parentNode.getElementsByTagName('ul');
+		
+		for (var ul = 0; ul < uls.length; ul++)
+			uls[ul].style.display = "none";
+		
+		caller.parentNode.getElementsByTagName('ul')[0].style.display = "block";
+		
+	} catch(e){}	
+}
+
+function dropdown_colapse(milliseconds)
+{
+	try
+	{
+		clearInterval(dropdown_intervalId);
+		
+		dropdown_intervalId = setInterval(function()
+		{				
+			var uls = document.getElementById(dropdown_ulId).getElementsByTagName('ul');
+			
+			for (var ul = 0; ul < uls.length; ul++)
+				uls[ul].style.display = "none";
+				
+			clearInterval(dropdown_intervalId);
+			
+		}, milliseconds, null);
+		
+	} catch(e){}
+}
+
+window.onload = dropdown_init;
+</script>
+</head>
+<body>
+<ul id="nav">
+	<li><a href="index.html">Home</a></li>
+	<li class="submenu"><a href="portfolio.html">Portfólio</a> 
+		<ul>
+			<li><a href="sites.html">Sites</a></li>
+			<li class="submenu"><a href="interfaces.html">Interfaces</a>
+				<ul>
+					<li><a href="graficas.html">Gráficas</a></li>
+					<li><a href="digitais.html">Digitais</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href="quemsomos.html">Quem Somos</a></li>
+	<li><a href="contato.html">Contato</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+<title>Forms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- Omitidas outras meta tags --> 
+<style type="text/css" media="all">
+body {font-size: 62.5%} 
+form { 
+	width: 25em; 
+	font-size: 1.6em;
+	font-weight:bold;
+	color: #090;
+	}
+form fieldset {
+	background: #cceecc url(bg-form.jpg) repeat-x bottom;
+	border: 1px solid #090;
+	padding: 0 0.5em;
+	}
+form legend {
+	background: #fbe; 
+	color:#c30;
+	padding: 0 0.5em; 
+	border: 1px solid #0c0;
+	}
+div {
+	float:left; 
+	margin: 1em 0;
+	}
+form label { 
+	display: block;
+	width: 5.5em;
+	margin-bottom: 1em;
+	}
+form input {  
+	background: #fef;
+	display: block;
+	width: 15em;
+	margin-bottom: 1em; 
+	border: 1px solid #ccc;
+	}
+form input#enviar {
+	clear: both;
+	width: auto;
+	}
+form textarea {
+	background: #fef; 
+	border: 1px solid #ccc;
+	display: block;
+	width: 20em;
+	}
+</style>
+</head>
+<body>
+<form action="">
+<fieldset>
+<legend>Fale conosco</legend>
+<div>	
+	<label for="nome">Nome:</label>
+	<label for="email">E-mail:</label>
+	<label for="email">Mensagem:</label>
+</div>
+<div>
+	<input type="text" id="nome" />
+	<input type="text" id="email" />
+	<textarea id="mensagem" rows="6" cols="28"></textarea>
+</div>
+	<input type="submit" value="Enviar" id="enviar" />
+</fieldset>
+</form>
+</body>
+</html>
