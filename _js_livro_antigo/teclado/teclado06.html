@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+</HEAD>
+
+<BODY>
+
+Capturando a tecla no NETSCAPE...
+e mostrando qual foi pressionada!!!
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	function mensagem(){
+		if(document.all){
+			var tecla = String.fromCharCode(event.KeyCode);
+			window.alert("Voce pressionou a tecla: : "+tecla);
+		}
+		else if(document.layers){
+			var Codigo = e.which;
+			var Tecla = String.fromCharCode(e.which);
+			window.alert("Você pressionou a tecla: "+Tecla);
+		}
+	}
+	document.onkeypress = mensagem;
+	if(document.layers){
+		document.captureEvents(Event.KEYPRESS);
+	}
+//-->
+</script>
+
+</BODY>
+</HTML>

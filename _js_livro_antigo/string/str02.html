@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title> STRING </title>
+	<script language="JavaScript">
+		function Contar(){
+			var Palavra = document.frm1.text1.value;
+			var Letras = Palavra.length;
+			window.alert("Esta palavra tem "+Letras+" letras");
+		}
+		
+		function ligar(){
+			document.frm1.btnContarLetras.onclick = Contar;
+		}
+		
+		window.onload = ligar;
+		
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		Digite uma palavra:
+		<input type="text" name="text1" size="20">
+		<input type="button" value="Contar letras!" id="btnContarLetras">
+	</form>
+</body>
+</html>

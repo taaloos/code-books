@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+</HEAD>
+
+<BODY>
+
+Capturando a tecla no NETSCAPE...
+e mostrando qual foi pressionada!!!
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	function atualizar{
+		if(document.all){
+			if((event.keycode == 97 || event.keycode == 65)){
+				windows.location.reload();
+			}
+		}
+		else if(document.layers){
+			if((e.which == 97 || e.which == 65)){
+				window.location reload();
+			}
+		}
+	}
+	document.onkeypress = atualizar;
+	if(document.layers){
+		document.captureEvents(Event.KEYPRESS);
+	}
+//-->
+</script>
+
+</BODY>
+</HTML>

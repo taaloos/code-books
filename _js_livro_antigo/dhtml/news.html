@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE> News </TITLE>
+</HEAD>
+
+<BODY onLoad="Noticias()">
+<DIV ID="news">Últimas notícias do site</div>
+
+
+<SCRIPT language="JavaScript">
+<!--
+	var Contar = 0;
+	function Noticias(){
+		var mnews = new Array();
+		mnews[0]= '<IMG SCR = "botao.gif">Visite a nossa página de fotos';
+		mnews[1]= '<IMG SCR = "botao.gif">Já está aberto o nosso concurso';
+		mnews[2]= '<IMG SCR = "botao.gif">Para participar envie um email';
+		mnews[3]= '<IMG SCR = "botao.gif">Quantas vezes você veio aqui';
+		mnews[4]= '<IMG SCR = "botao.gif">Este é um exemplo de news';
+
+		news.innerHTML = mnews[Contar];
+		Contar = Contar + 1;
+		if(Contar > 4){
+			Contar = 0;
+		}
+	}
+	window.setInterval("Noticias()",2000);
+//-->
+</script>
+
+
+
+</BODY>
+</HTML>

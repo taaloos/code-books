@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE> STRING </TITLE>
+</HEAD>
+
+<BODY>
+
+<SCRIPT language="JavaScript">
+<!--
+	var Palavra = "Vendedor";
+	var Lugar = Palavra.charAt(5);
+	window.alert("A letra na posição 5 é: "+Lugar);
+//-->
+</script>
+
+
+<SCRIPT language="JavaScript">
+<!--
+	var Frase0 = "Eu acho que";
+	var Frase1 = " programar é";
+	var Frase2 = " muito legal";
+	document.write(Frase0.concat(Frase1,Frase2));
+//-->
+</script>
+<BR>
+
+<SCRIPT language="JavaScript">
+<!--
+	var Frase0 = "Eu acho que";
+	var Frase1 = " programar é";
+	var Frase2 = " muito legal";
+	document.write(Frase0 + Frase1 + Frase2);
+//-->
+</script>
+
+</BODY>
+</HTML>
