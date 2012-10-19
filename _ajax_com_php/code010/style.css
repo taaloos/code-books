@@ -1,0 +1,61 @@
+/* style.css */
+
+body {
+	font-size: 11px;
+	font-family: verdana;
+	color: #000000;
+}
+
+.themessage {
+	width: 96%;
+	background: #EEEEEE;
+	padding: 5px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.bodypad {
+	padding: 4px;
+}
+.maindiv {
+	width: 758px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+.mapclass {
+	width: 400px;
+	height: 400px;
+	float: left;
+}
+
+.formclass {
+	width: 350px;
+	float: right;
+}
+
+.pad {
+	padding-left: 10px;
+}
+
+.marginspace {
+	margin-top: 10px;
+}
+
+SELECT, option, input, textarea {
+	font-family: verdana;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px #000000 solid;
+}
+
+p {
+	font-weight: bold;
+	margin-top: 0px;
+}
+
+form {
+	margin: 0px;
+}

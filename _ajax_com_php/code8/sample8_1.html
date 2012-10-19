@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Sample 8_1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="xmlhttp.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+</head>
+<body>
+	<!-- Hidden Menu. -->
+	<div class="menu" id="themenu">
+		&raquo; <a href="">Home</a><br />
+		&raquo; <a href="">Page 1</a><br />
+		&raquo; <a href="">Page 2</a><br />
+		&raquo; <a href="">Page 3</a>
+	</div>
+	<!-- The Header. -->
+	<h1>Proper AJAX Navigation</h1>
+	<div class="header">
+		<a href="sample8_1.html" onclick="showmenu (); return false;">Home</a>
+		 | <a href="sample8_1.html?page=1" onclick="processajax ('page1.html','pagecont','get',''); return false;">Page 1</a> 
+		 | <a href="sample8_1.html?page=2" onclick="processajax ('page2.html','pagecont','get',''); return false;">Page 2</a>
+		 | <a href="sample8_1.html?page=3" onclick="processajax ('page3.html','pagecont','get',''); return false;">Page 3</a>
+	</div>
+	<!-- Wrapper. -->
+	<div class="wrapper">
+		<!-- Content. -->
+		<div class="content">
+			<div class="pad" id="pagecont">
+				<?php
+					if (isset ($_GET['page'])){
+						switch ($_GET['page']){
+							case (1):
+								require_once ("page1.html");
+								break;
+							case (2):
+								require_once ("page2.html");
+								break;
+							case (3):
+								require_once ("page3.html");
+								break;
+							default:
+								require_once ("home.html");
+						}
+					} else {
+						require_once ("home.html");
+					}
+				?>
+			</div>
+		</div>
+		<!-- Navigation. -->
+		<div class="rightnav">
+			<div class="pad">
+				&raquo; <a href="sample8_1.html" onclick="processajax ('home.html','pagecont','get',''); return false;">Home</a><br />
+				&raquo; <a href="sample8_1.html?page=1" onclick="processajax ('page1.html','pagecont','get',''); return false;">Page 1</a><br />
+				&raquo; <a href="sample8_1.html?page=2" onclick="processajax ('page2.html','pagecont','get',''); return false;">Page 2</a><br />
+				&raquo; <a href="sample8_1.html?page=3" onclick="processajax ('page3.html','pagecont','get',''); return false;">Page 3</a><br />
+			</div>
+		</div>
+		<br style="clear: both;" />
+	</div>
+	<!-- Footer. -->
+	<div class="footer">
+		<a href="sample8_1.html">Home</a> 
+		| <a href="sample8_1.html?page=1">Page 1</a> 
+		| <a href="sample8_1.html?page=2">Page 2</a> 
+		| <a href="sample8_1.html?page=3">Page 3</a>
+	</div>
+</body>
+</html>
