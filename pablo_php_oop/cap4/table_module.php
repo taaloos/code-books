@@ -10,9 +10,9 @@ final class Produto
     /*
      * método adicionar
      * adiciona um produto ao registro
-     * @param $descricao = descriçao do produto
+     * @param $descricao   = descriçao do produto
      * @param $estoque     = estoque atual
-     * @param $preco_custo= preco de custo
+     * @param $preco_custo = preco de custo
      */
     public function adicionar($id, $descricao, $estoque, $preco_custo)
     {
@@ -25,7 +25,7 @@ final class Produto
      * método registraCompra
      * registra uma compra, atualiza custo e incrementa o estoque atual do produto
      * @param $unidades    = unidades adquiridas
-     * @param $preco_custo= novo preco de custo
+     * @param $preco_custo = novo preco de custo
      */
     public function registraCompra($id, $unidades, $preco_custo)
     {

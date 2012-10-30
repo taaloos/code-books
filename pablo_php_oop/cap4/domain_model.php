@@ -12,22 +12,22 @@ final class Produto
     /*
      * método construtor
      * define alguns valores iniciais
-     * @param $descricao = descrição do produto
+     * @param $descricao    = descrição do produto
      * @param $estoque      = estoque atual
-     * @param $preco_custo= preco de custo
+     * @param $preco_custo  = preco de custo
      */
     public function __construct($descricao, $estoque, $preco_custo)
     {
-        $this->descricao = $descricao;
-        $this->estoque    = $estoque;
-        $this->preco_custo= $preco_custo;
+        $this->descricao   = $descricao;
+        $this->estoque     = $estoque;
+        $this->preco_custo = $preco_custo;
     }
     
     /*
      * método registraCompra
      * registra uma compra, atualiza custo e incrementa o estoque atual
-     * @param $unidades     = unidades adquiridas
-     * @param $preco_custo= novo preco de custo
+     * @param $unidades    = unidades adquiridas
+     * @param $preco_custo = novo preco de custo
      */
     public function registraCompra($unidades, $preco_custo)
     {
@@ -63,6 +63,8 @@ final class Produto
         return $this->preco_custo * 1.3;
     }
 }
+
+
 
 /*
  * classe Venda

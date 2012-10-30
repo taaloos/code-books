@@ -9,9 +9,9 @@ class ProdutoGateway
      * método insert
      * insere dados na tabela de Produtos
      * @param $id          = ID do produto
-     * @param $descricao = descriçao do produto
+     * @param $descricao   = descriçao do produto
      * @param $estoque     = estoque atual
-     * @param $preco_custo= preco de custo
+     * @param $preco_custo = preco de custo
      */
     function insert($id, $descricao, $estoque, $preco_custo)
     {
@@ -32,9 +32,9 @@ class ProdutoGateway
      * método update
      * altera os dados na tabela de Produtos
      * @param $id          = ID do produto
-     * @param $descricao = descriçao do produto
+     * @param $descricao   = descriçao do produto
      * @param $estoque     = estoque atual
-     * @param $preco_custo= preco de custo
+     * @param $preco_custo = preco de custo
      */
     function update($id, $descricao, $estoque, $preco_custo)
     {

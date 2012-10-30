@@ -2,6 +2,10 @@
 /*
  * classe ProdutoGateway
  * implementa Row Data Gateway
+ * 
+ * Representa cada registro da tabela (cada linha)
+ * Não possue regras de negócio
+ * StateFull
  */
 class ProdutoGateway
 {

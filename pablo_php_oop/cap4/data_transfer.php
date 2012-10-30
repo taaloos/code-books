@@ -70,6 +70,11 @@ class ProdutoGateway
         return $data;
     }
 }
+
+
+/**
+ *
+ */
 class Produto
 {
     public $id;
@@ -78,14 +83,15 @@ class Produto
     public $preco_custo;
 }
 
-// instancia objeto ProdutoGateway
-$gateway = new ProdutoGateway;
+
 $vinho = new Produto;
 $vinho->id           = 4;
 $vinho->descricao    = 'Vinho';
 $vinho->estoque      = 10;
 $vinho->preco_custo  = 15;
 
+// instancia objeto ProdutoGateway
+$gateway = new ProdutoGateway;
 // insere o objeto no banco de dados
 $gateway->insert($vinho);
 
