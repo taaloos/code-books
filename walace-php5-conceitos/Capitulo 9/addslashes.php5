@@ -1,0 +1,7 @@
+<?php
+	$var1 = "Este é um exemplo de addslashes com ' e \ ";
+	$var2 = 'Este é outro exemplo com "';
+	
+	echo addslashes($var1) . "<br>";
+	echo addslashes($var2) . "<br>";
+?>

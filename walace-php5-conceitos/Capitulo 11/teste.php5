@@ -1,0 +1,1 @@
+<P><B>TESTE de file_put_contents()</B></P><P>Data: <?=date("d-m-Y H:i:s")?></P>

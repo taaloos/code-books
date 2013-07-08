@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>PHP5 - Guia do Programador - Exemplo de um formulário WEB</title>
+</head>
+<body>
+<form name="usr" method="post" action="cadastra_usuario.php5">
+ <table border="0" cellpadding="5" cellspacing="5">
+  			<tr>
+			  <td colspan=2 height="30" bgcolor="#8CDAFF"><b>PHP 5 - Guia do Programador: Cadastro de Usuário</b></td>
+			</tr>
+  			<tr>
+			  <td colspan=2 height="30"><font color="#0000A0"><b>Informe seus dados:</b></font></td>
+			</tr>
+			<tr>
+			<td width="25%" height="30">Nome:</td>
+  			<td height="30" ><input type="text" name="USR_NOME" size="30"></td>
+			</tr>
+  			<td width="10%" height="30" valign="top">Endereço:</td>
+  			<td  height="30" ><TEXTAREA NAME="USR_ENDER" COLS="60" ROWS="5"></TEXTAREA></td>
+			</tr>
+			</tr>
+			<tr>
+  			<td width="10%" height="30">Bairro:</td>
+  			<td height="30"><input type="text" name="USR_BAIRRO" size="30"></td>
+			</tr>
+			<tr>
+  			<td width="10%" height="30" class="login">Cidade:</td>
+  			<td height="30"><input type="text" name="USR_CIDADE" size="30"></td>
+			</tr>
+			<tr>
+  			<td width="10%" height="30" class="login">Estado:</td>
+  			<td height="30">
+			  <select name="USR_CIDADE">
+			     <option value="SP">São Paulo</option>
+			     <option value="RJ">Rio de Janeiro</option>
+			     <option value="ES">Espirito Santo</option>			 				 
+			     <option value="MG">Minas Gerais</option>
+			     <option value="RS">Rio Grande do Sul</option>	
+			     <option value="AM">Amazonas</option>
+			     <option value="CE">Ceará</option>
+			     <option value="BA">Bahia</option>
+			  </select>					 					 					 				 	
+			</td>
+			</tr>
+			<tr>
+  			<td width="10%" height="30">E-mail:</td>
+  			<td height="30" ><input type="text" name="USR_EMAIL" size="30" ></td>
+			</tr>
+			<tr>
+  			<td width="10%" height="30">Login:</td>
+  			<td height="30" ><input type="text" name="USR_LOGIN" size="10"></td>
+			</tr>
+			<tr>
+  			<td width="10%" height="30">Senha:</td>
+  			<td height="30" ><input type="password" name="USR_SENHA" size="10"></td>
+			</tr>
+			<tr>
+  			<td width="20%" height="30">Confirmação de Senha:</td>
+  			<td height="30" align="left" ><input type="password" name="USR_SENHA2" size="10"></td>
+			</tr>
+			<tr height="60" valign="bottom">
+  			<td width="20%" ></td>
+  			<td height="30" valign="bottom">
+			<input type="submit" value="     OK     ">&nbsp;&nbsp;&nbsp;
+			<input type="reset" value= "   Limpar   ">
+			</td>
+			</tr>
+  </table>
+</form>
+</body>
+</html>
+

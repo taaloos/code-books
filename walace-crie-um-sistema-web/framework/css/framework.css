@@ -1,0 +1,93 @@
+body {
+	width: 1024;
+	font-family: Verdana Georgia Sans;
+	font-size: 12px;
+}
+#titulo {
+	text-align:center;
+	color:#4169e1;
+	padding:5px;
+	width:1024px;
+	font-weight:bold;
+	font-size: 14px;
+}
+input, select, textarea {
+	border: 1px Solid #4682b4;
+	padding: 2px;
+	color: #3A5FCD;
+}
+#btnok {
+	height: 50px;
+	vertical-align: bottom;
+	padding-bottom:5px;
+}
+button, #ok, #gravar, #clear {
+	border: 1px Solid #4682b4;
+	padding: 3px;
+	padding-left:17px;
+	font-size: 12px;
+	background: url(../imagens/fundobotao.png) left center no-repeat;
+	background-color: #ffffff;
+	color: #000000;
+}
+button:hover, #ok:hover, #gravar:hover, #clear:hover {
+	padding-top: 4px;
+	padding-bottom: 2px;
+	padding-left: 19px;
+	padding-right: 1px;
+	color: #436EEE;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	color: #4169e1;
+	padding-left: 3px;
+	padding-right: 3px;
+	font-weight: normal;
+}
+a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #8968CD;
+}
+#logo:hover, #footer a:hover,img:hover, a.nohover { 	
+	text-decoration: none;
+	color: white;
+	background-color: white;
+}
+tr.detalhe {
+	height: 10px;
+}
+tr.detalhe {
+	background-color: #ccffff;
+}
+#footer {
+	border: 1px Solid #c0c0c0;
+	padding: 1px;
+	width: 1024px;
+}
+.botao, a.botao img, a.botao:hover { 	
+	text-decoration: none;
+	background-color:transparent;
+	border: 1px solid #ece9d8;
+}
+a.botao img:hover, a.botao img.over {
+	border: 1px solid #aaaaff;
+	background-color: #ccffff;
+	text-decoration: none;
+}
+.separador:hover { 	
+	text-decoration: none;
+	background-color:transparent;
+}
+a.menususpenso {
+	color: black;
+	font-size: 11px;
+	text-decoration: none;
+	background-color:transparent;
+}
+a.menususpenso:hover {
+	color: #B22222;
+	text-decoration: none;
+	background-color:transparent;
+}

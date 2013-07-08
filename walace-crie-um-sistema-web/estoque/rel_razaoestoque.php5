@@ -1,0 +1,9 @@
+<?php
+/**
+ * Relatório: Extrato de movimentação
+ * 
+ */
+$_classe = Array("arquivo"=>"estoque/classes/classe_razaoestoque.inc","nome"=>"razaoestoque");
+$_FTitulo = "Relatório de Razão de Estoque";
+return include_once("../instanciaclasse.php5");
+?>
