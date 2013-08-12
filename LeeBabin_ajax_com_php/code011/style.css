@@ -1,0 +1,49 @@
+/* style.css */
+
+body {
+	font-size: 11px;
+	font-family: verdana;
+	color: #000000;
+}
+
+h1 {
+	font-size: 18px;
+	margin-top: 0px;
+}
+
+.backpad {
+	padding: 10px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+input {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #6A79A9;
+}
+
+textarea {
+	width: 535px;
+	height: 200px;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #6A79A9;
+}
+
+.formwrapper {
+	width: 550px;
+	padding: 10px;
+	background-color: #CCCCCC;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+}
